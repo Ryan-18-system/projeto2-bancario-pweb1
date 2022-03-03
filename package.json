@@ -1,0 +1,15 @@
+{
+  "name": "projeto-bancario-ts",
+  "version": "1.0.0",
+  "description": "Projeto Bancário ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc"
+  },
+  "author": "Ryan Nóbrega",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}
