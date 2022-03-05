@@ -25,5 +25,10 @@ class Cliente{
     set conta(newConta){
         this._conta = newConta
     }
+    toString(){
+        return `Nome: ${this._nome} /
+                Cpf: ${this._cpf} /
+                Conta- ${this._conta}`
+    }
 
 }
