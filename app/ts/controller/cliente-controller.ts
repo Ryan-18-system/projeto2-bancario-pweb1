@@ -26,18 +26,18 @@ class ClienteController {
 
         this.contas.inserir(novaConta);
         this.clientes.inserir(newCliente);
-        this.inserirContaNoHTML(newCliente);
+        this.inserirClienteNoHTML(newCliente);
     }
 
     listar() {
         this.clientes.listar().forEach(
             cliente=> {
-                this.inserirContaNoHTML(cliente);
+                this.inserirClienteNoHTML(cliente);
             }
         );
     }
 
-    inserirContaNoHTML(cliente: Cliente) {
+    inserirClienteNoHTML(cliente: Cliente) {
         const elementoP = document.createElement('p');
         elementoP.textContent = cliente.toString();
         const botaoApagar = document.createElement('button');

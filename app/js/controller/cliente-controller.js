@@ -15,14 +15,14 @@ class ClienteController {
         const newCliente = new Cliente(this.inputNome.value, this.inputCpf.value, novaConta);
         this.contas.inserir(novaConta);
         this.clientes.inserir(newCliente);
-        this.inserirContaNoHTML(newCliente);
+        this.inserirClienteNoHTML(newCliente);
     }
     listar() {
         this.clientes.listar().forEach(cliente => {
-            this.inserirContaNoHTML(cliente);
+            this.inserirClienteNoHTML(cliente);
         });
     }
-    inserirContaNoHTML(cliente) {
+    inserirClienteNoHTML(cliente) {
         const elementoP = document.createElement('p');
         elementoP.textContent = cliente.toString();
         const botaoApagar = document.createElement('button');
